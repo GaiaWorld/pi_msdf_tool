@@ -68,9 +68,7 @@ const genTarget = () => {
   startGen(getTargetCharset());
 };
 
-if (false) {
-  startGen('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890');
-} else if (conf.genFrequency) {
+if (conf.genFrequency) {
   const asciiAndSymbol = getAll();
   const freqCharset = uniqueChar(getAll() + uniqueChar(gb2312).slice(0, 3000));
   generate(freqCharset, conf.fontFilePath, [1024, 1024], conf.outputDir, conf.jsonToBinary, frequencyCharName, false, (data) => {

@@ -7,7 +7,7 @@
  *    charNumPerProcess:  每次处理的字符个数
  *    pictureSize:        输出的字体图片的大小[width, height]
  *    jsonToBinary:       将字体json文件转成二进制文件
- *    outputFileName:     字体生成后的输出文件名
+ *    includeGB2312:      字体生成后的输出文件名
  *    charsetInputFile:   要生成字体的字符集
  */
 const conf = {
@@ -18,7 +18,7 @@ const conf = {
   charNumPerProcess: 100,
   pictureSize: [1024, 1024],
   jsonToBinary: true,
-  outputFileName: 'testFont',
+  includeGB2312: true,
   charsetInputFile: './charset.txt'
 };
 
